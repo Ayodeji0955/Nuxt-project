@@ -1,4 +1,10 @@
+// import { resolve } from 'path'
+
 export default {
+  // alias:{
+  //   'images': resolve(__dirname, './assets/images')
+  // },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ventures-nation',
@@ -19,6 +25,10 @@ export default {
       },
       {
         src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js',
+        type: 'text/javascript'
+      },
+      {
+        src: '//code.jquery.com/jquery-1.11.1.min.js',
         type: 'text/javascript'
       }
     ]
