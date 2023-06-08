@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h1>Authentication root components</h1>
+    <!-- <h1>Authentication root components</h1> -->
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col">
         <div class="formbg-outer">
           <div class="formbg">
@@ -50,18 +50,18 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-* {
-  padding: 0;
-  margin: 0;
-  color: #1a1f36;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
-}
-body {
-    min-height: 100%;
-    background-color: #ffffff;
-}
+// * {
+//   padding: 0;
+//   margin: 0;
+//   color: #1a1f36;
+//   box-sizing: border-box;
+//   word-wrap: break-word;
+//   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+// }
+// body {
+//     min-height: 100%;
+//     background-color: #ffffff;
+// }
 h1 {
     letter-spacing: -1px;
 }
