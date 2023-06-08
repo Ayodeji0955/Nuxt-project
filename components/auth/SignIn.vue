@@ -1,41 +1,42 @@
 <template>
   <div class="login">
-    <div class="row align-items-center">
-      <div class="col">
-        <div class="formbg-outer">
-          <div class="formbg">
-            <div class="formbg-inner padding-horizontal--48">
-              <h1 class="text-center">
-                Welcome Back!
-              </h1>
-              <span class="padding-bottom--15">Kindly input your details to access your account.</span>
-              <form id="stripe-login">
-                <div class="field padding-bottom--24">
-                  <label for="email">Email</label>
-                  <input type="email" name="email">
-                </div>
-                <div class="field padding-bottom--24">
-                  <div class="grid--50-50">
-                    <label for="password">Password</label>
+    <div class="row">
+      <div class="col-md-6 login__main-col">
+        <div class="container py-4">
+          <div class="formbg-outer">
+            <div class="formbg">
+              <div class="formbg-inner padding-horizontal--48">
+                <h1 class="text-center">
+                  Welcome Back!
+                </h1>
+                <span class="padding-bottom--15">Kindly input your details to access your account.</span>
+                <form id="stripe-login">
+                  <div class="field padding-bottom--24">
+                    <label for="email">Email</label>
+                    <input type="email" name="email">
                   </div>
-                  <input type="password" name="password">
-                </div>
-                <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
-                  <a class="ssolink" href="#">Forgot password?</a>
-                </div>
-                <div class="field padding-bottom--24">
-                  <input type="submit" name="submit" value="Sign in">
-                </div>
-                <div class="field">
-                  <a class="ssolink" href="#">Don’t have an account? Sign up</a>
-                </div>
-              </form>
+                  <div class="field padding-bottom--24">
+                    <div class="grid--50-50">
+                      <label for="password">Password</label>
+                    </div>
+                    <input type="password" name="password">
+                  </div>
+                  <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
+                    <a class="ssolink" href="#">Forgot password?</a>
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <input type="submit" name="submit" value="Sign in">
+                  </div>
+                  <div class="field">
+                    <a class="ssolink" href="#">Don’t have an account? Sign up</a>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col login">
-        <img src="images/img_1/wrk.png">
+      <div class="col-md-6 login__sub-col">
         <h1> The Lord</h1>
       </div>
     </div>
@@ -51,6 +52,21 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
+.login {
+
+  &__sub-col {
+    background-image: url('~@/assets/images/img_1/wrk.png');
+    background-position:center;
+    background-size:cover;
+    // padding-top: 7rem;
+    height: 100vh;
+  }
+
+  &__main-col {
+    padding-top: 4rem;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -159,7 +175,7 @@ a {
 
 .formbg {
     margin: 0px auto;
-    width: 100%;
+    // width: 100%;
     max-width: 448px;
     background: white;
     border-radius: 4px;
