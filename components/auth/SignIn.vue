@@ -1,15 +1,18 @@
 <template>
   <div class="login">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-md-6 login__main-col">
         <div class="container py-4">
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
-                <h1 class="text-center">
+                <div class=" text-center py-4">
+                  <img src="assets/images/img_1/frame.svg">
+                </div>
+                <h1 class="padding-bottom--12 text-center">
                   Welcome Back!
                 </h1>
-                <span class="padding-bottom--15">Kindly input your details to access your account.</span>
+                <span class="padding-bottom--15 text-center">Kindly input your details to access your account. </span>
                 <form id="stripe-login">
                   <div class="field padding-bottom--24">
                     <label for="email">Email</label>
@@ -37,7 +40,7 @@
         </div>
       </div>
       <div class="col-md-6 login__sub-col">
-        <h1> The Lord</h1>
+        <h1></h1>
       </div>
     </div>
   </div>
@@ -62,9 +65,9 @@ export default Vue.extend({
     height: 100vh;
   }
 
-  &__main-col {
-    padding-top: 4rem;
-  }
+  // &__main-col {
+  //   padding-top: 4rem;
+  // }
 }
 
 * {
@@ -78,12 +81,13 @@ export default Vue.extend({
 body {
     min-height: 100%;
     background-color: #ffffff;
+    margin: 0;
 }
 h1 {
     letter-spacing: -1px;
 }
 a {
-  color: #5469d4;
+  color: #5A27D5;
   text-decoration: unset;
 }
 .login-root {
@@ -131,55 +135,70 @@ a {
     margin: 0 -2%;
     transform: rotate(-12deg) skew(-12deg);
 }
-.box-divider--light-all-2 {
-    box-shadow: inset 0 0 0 2px #e3e8ee;
-}
-.box-background--blue {
-    background-color: #5469d4;
-}
-.box-background--white {
-  background-color: #ffffff;
-}
-.box-background--blue800 {
-    background-color: #212d63;
-}
-.box-background--gray100 {
-    background-color: #e3e8ee;
-}
-.box-background--cyan200 {
-    background-color: #7fd3ed;
-}
+// .box-divider--light-all-2 {
+//     box-shadow: inset 0 0 0 2px #e3e8ee;
+// }
+// .box-background--blue {
+//     background-color: #5469d4;
+// }
+// .box-background--white {
+//   background-color: #ffffff;
+// }
+// .box-background--blue800 {
+//     background-color: #212d63;
+// }
+// .box-background--gray100 {
+//     background-color: #e3e8ee;
+// }
+// .box-background--cyan200 {
+//     background-color: #7fd3ed;
+// }
 .padding-top--64 {
-  padding-top: 64px;
+  padding-top: 4rem;
 }
 .padding-top--24 {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 .padding-top--48 {
-  padding-top: 48px;
+  padding-top: 3rem;
 }
 .padding-bottom--24 {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem
 }
 .padding-horizontal--48 {
-  padding: 48px;
+  padding: 1.5rem;
 }
 .padding-bottom--15 {
-  padding-bottom: 15px;
+  padding-bottom: 2rem;
+  color: #404040;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.padding-bottom--12 {
+  padding-bottom: 0.75rem;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  color: #404040;
 }
 
-.flex-justifyContent--center {
-  -ms-flex-pack: center;
-  justify-content: center;
-}
+// .flex-justifyContent--center {
+//   -ms-flex-pack: center;
+//   justify-content: center;
+// }
 
 .formbg {
     margin: 0px auto;
-    // width: 100%;
+    width: 100%;
     max-width: 448px;
     background: white;
     border-radius: 4px;
-    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+    // box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
 span {
     display: block;
@@ -225,15 +244,15 @@ label {
 }
 
 input[type="submit"] {
-    background-color: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-                rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-                rgb(84, 105, 212) 0px 0px 0px 1px,
-                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-                rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-                rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-    // color: #fff;
+  background: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
+    // box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    //             rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
+    //             rgb(84, 105, 212) 0px 0px 0px 1px,
+    //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    //             rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+    color: #fff;
     font-weight: 600;
     cursor: pointer;
 }
