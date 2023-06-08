@@ -34,7 +34,8 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col login">
+        <img src="images/img_1/wrk.png">
         <h1> The Lord</h1>
       </div>
     </div>
