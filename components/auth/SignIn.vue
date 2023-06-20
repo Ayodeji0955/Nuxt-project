@@ -31,10 +31,16 @@
                     <input type="submit" name="submit" value="Sign in">
                   </div>
                   <div class="field">
-                    <a class="ssolink" href="#">Don’t have an account? </a>
-                    <nuxt-link to="Signup">
-                      Signup
-                    </nuxt-link>
+                    <div class="row justify-content-center g-0">
+                      <div class="col-md-8">
+                        <a class="ssolink" href="#">Don’t have an account? </a>
+                      </div>
+                      <div class="col-md-2">
+                        <nuxt-link to="Signup">
+                          Signup
+                        </nuxt-link>
+                      </div>
+                    </div>
                   </div>
                 </form>
               </div>
