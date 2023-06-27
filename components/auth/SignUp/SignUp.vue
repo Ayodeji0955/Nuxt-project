@@ -1,5 +1,5 @@
 <template>
-  <div class="login">
+  <div class="signup">
     <div class="row align-items-center">
       <div class="col-md-6 login__main-col">
         <div class="container py-4">
@@ -10,7 +10,7 @@
                   <img src="assets/images/img_1/frame.svg">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
-                  Welcome Back!
+                  Create an account
                 </h1>
                 <span class="padding-bottom--15 text-center">Kindly input your details to access your account. </span>
                 <form id="stripe-login">
@@ -135,24 +135,6 @@ margin: 0;
       margin: 0 -2%;
       transform: rotate(-12deg) skew(-12deg);
   }
-  // .box-divider--light-all-2 {
-  //     box-shadow: inset 0 0 0 2px #e3e8ee;
-  // }
-  // .box-background--blue {
-  //     background-color: #5469d4;
-  // }
-  // .box-background--white {
-  //   background-color: #ffffff;
-  // }
-  // .box-background--blue800 {
-  //     background-color: #212d63;
-  // }
-  // .box-background--gray100 {
-  //     background-color: #e3e8ee;
-  // }
-  // .box-background--cyan200 {
-  //     background-color: #7fd3ed;
-  // }
   .padding-top--64 {
     padding-top: 4rem;
   }
@@ -186,17 +168,13 @@ margin: 0;
     line-height: 20px;
     color: #404040;
   }
-  // .flex-justifyContent--center {
-  //   -ms-flex-pack: center;
-  //   justify-content: center;
-  // }
+
 .formbg {
       margin: 0px auto;
       width: 100%;
       max-width: 448px;
       background: white;
       border-radius: 4px;
-      // box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
   }
   span {
       display: block;

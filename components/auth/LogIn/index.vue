@@ -1,7 +1,6 @@
 <template>
   <div class="">
-    <authLogInSignIn />
-    <!-- <authSignUpSignUp /> -->
+    <!-- <h1>Authentication root components</h1> -->
   </div>
 </template>
 
