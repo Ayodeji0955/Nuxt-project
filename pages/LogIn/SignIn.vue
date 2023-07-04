@@ -32,10 +32,10 @@
                   </div>
                   <div class="field">
                     <div class="row justify-content-center g-0">
-                      <div class="col-md-8">
+                      <div class="col-md-6">
                         <a class="ssolink" href="#">Don’t have an account? </a>
                       </div>
-                      <div class="col-md-2">
+                      <div class="col-md-6">
                         <nuxt-Link to="/Register/SignUp">
                           Signup
                         </nuxt-link>
