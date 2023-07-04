@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <authLogInSignIn />
-    <!-- <authSignUpSignUp /> -->
+    <authRegisterSignUp />
   </div>
 </template>
 

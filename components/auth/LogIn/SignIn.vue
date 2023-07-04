@@ -36,9 +36,9 @@
                         <a class="ssolink" href="#">Don’t have an account? </a>
                       </div>
                       <div class="col-md-2">
-                        <NuxtLink to="/signup">
+                        <nuxt-Link to="/signup">
                           Signup
-                        </NuxtLink>
+                        </nuxt-link>
                       </div>
                     </div>
                   </div>
