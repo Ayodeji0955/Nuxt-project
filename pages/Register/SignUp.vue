@@ -15,20 +15,23 @@
                 <span class="padding-bottom--15 text-center">Kindly input your details to access your account. </span>
                 <form id="stripe-login">
                   <div class="field padding-bottom--24">
-                    <label for="email">Email</label>
+                    <label for="email">Full name</label>
+                    <input type="email" name="email">
+                  </div>
+                  <div class="field padding-bottom--24">
+                    <label for="email">Email address</label>
                     <input type="email" name="email">
                   </div>
                   <div class="field padding-bottom--24">
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
-                    <input type="password" name="password">
-                  </div>
-                  <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
-                    <a class="ssolink" href="#">Forgot password?</a>
+                    <!-- <input id="password" type="password" v-model="passwordValue" />
+                    <span v-if="score === 0">Use better password</span>
+                    <password-meter :password="passwordValue" @score="onScore" /> -->
                   </div>
                   <div class="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Sign in">
+                    <input type="submit" name="submit" value="Continue">
                   </div>
                   <div class="field">
                     <a class="ssolink" href="#">Don’t have an account? Sign up</a>
@@ -40,7 +43,7 @@
         </div>
       </div>
       <div class="col-md-6 login__sub-col">
-        <h1>sign up</h1>
+        <h1>Continue</h1>
       </div>
     </div>
   </div>
@@ -48,10 +51,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
+// import passwordMeter from 'vue-simple-password-meter'
 
 export default Vue.extend({
   name: 'IndexPage'
+
 })
+
 </script>
 
 <style lang="scss">
