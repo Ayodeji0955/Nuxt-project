@@ -26,9 +26,9 @@
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
-                    <!-- <input id="password" type="password" v-model="passwordValue" />
-                    <span v-if="score === 0">Use better password</span>
-                    <password-meter :password="passwordValue" @score="onScore" /> -->
+                    <!-- <input id="password" type="password" v-model="password" /> -->
+                    <span> Use better password</span>
+                    <!-- <password-meter :password="password" /> -->
                   </div>
                   <div class="field padding-bottom--24">
                     <input type="submit" name="submit" value="Continue">
@@ -51,10 +51,18 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// import passwordMeter from 'vue-simple-password-meter'
+import PasswordMeter from 'vue-simple-password-meter'
 
 export default Vue.extend({
-  name: 'IndexPage'
+  name: 'IndexPage',
+  components: {
+    PasswordMeter
+  },
+  data () {
+    return {
+      passowrd: null
+    }
+  }
 
 })
 
@@ -262,4 +270,35 @@ background: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
       font-weight: 600;
       margin: 0 10px;
   }
+  .po-password-strength-bar {
+    border-radius: 2px;
+    transition: all 0.2s linear;
+    height: 5px;
+    margin-top: 8px;
+}
+
+.po-password-strength-bar.risky {
+    background-color: #f95e68;
+    width: 10%;
+}
+
+.po-password-strength-bar.guessable {
+    background-color: #fb964d;
+    width: 32.5%;
+}
+
+.po-password-strength-bar.weak {
+    background-color: #fdd244;
+    width: 55%;
+}
+
+.po-password-strength-bar.safe {
+    background-color: #b0dc53;
+    width: 77.5%;
+}
+
+.po-password-strength-bar.secure {
+    background-color: #35cc62;
+    width: 100%;
+}
 </style>
