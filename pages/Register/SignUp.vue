@@ -51,18 +51,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import PasswordMeter from 'vue-simple-password-meter'
 
 export default Vue.extend({
-  name: 'IndexPage',
-  components: {
-    PasswordMeter
-  },
-  data () {
-    return {
-      passowrd: null
-    }
-  }
+  name: 'IndexPage'
 
 })
 
