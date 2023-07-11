@@ -15,11 +15,14 @@
                 <span class="padding-bottom--15 text-center">Information link has been sent to your email address </span>
                 <span class="padding-bottom--15 text-center"> email address </span>
                 <form id="stripe-login">
+                  <div class=" text-center py-4">
+                    <img src="assets/images/img_1/frame.svg">
+                  </div>
                   <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                     <a class="ssolink" href="#">Forgot password?</a>
                   </div>
                   <div class="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Sign in">
+                    <input type="submit" name="submit" value="Click to resend">
                   </div>
                   <div class="field">
                     <div class="row justify-content-center g-0">
@@ -231,18 +234,18 @@ export default Vue.extend({
       font-weight: 600;
       cursor: pointer;
   }
-  .field-checkbox input {
-      width: 20px;
-      height: 15px;
-      margin-right: 5px;
-      box-shadow: unset;
-      min-height: unset;
-  }
-  .field-checkbox label {
-      display: flex;
-      align-items: center;
-      margin: 0;
-  }
+//   .field-checkbox input {
+//       width: 20px;
+//       height: 15px;
+//       margin-right: 5px;
+//       box-shadow: unset;
+//       min-height: unset;
+//   }
+//   .field-checkbox label {
+//       display: flex;
+//       align-items: center;
+//       margin: 0;
+//   }
   a.ssolink {
       display: block;
       text-align: center;
