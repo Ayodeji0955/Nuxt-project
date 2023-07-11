@@ -7,7 +7,7 @@
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
                 <div class=" text-center py-4">
-                  <img src="assets/images/img_1/frame.svg">
+                  <img src="assets/images/img_1/favicon.png">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
                   Create an account
@@ -26,9 +26,16 @@
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
-                    <input id="password" type="password">
-                    <password-meter :password="passwordValue" />
+                    <span v-if="score === 0">Use better password</span>
+                    <Password v-model="password" :show-password="show" :badge="false" :toggle="true" />
                   </div>
+                  <!-- <div id="app">
+                    <button @click.prevent="toggle()">
+                      Show / Hide Password
+                    </button>
+                    <hr>
+                    <Password v-model="password" :show-password="show" :badge="false" :toggle="true" />
+                  </div> -->
                   <div class="field padding-bottom--24">
                     <input type="submit" name="submit" value="Continue">
                   </div>
@@ -48,14 +55,33 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
+import Password from 'vue-password-strength-meter'
 
 export default Vue.extend({
-  name: 'IndexPage',
+  // name: 'IndexPage',
+  // data: () => ({
+  //   passwordValue: null
+  // })
+  // name: "IndexPage",
+  components: {
+    Password
+  },
   data: () => ({
-    passwordValue: null
-  })
+    password: null,
+    show: false
+  }),
+  methods: {
+    toggle () {
+      this.show = !this.show
+    },
+    onScore ({ score, strength }) {
+      console.log(score) // from 0 to 4
+      console.log(strength) // one of : 'risky', 'guessable', 'weak', 'safe' , 'secure' 
+      this.score = score
+    }
+  }
 
 })
 
