@@ -40,7 +40,7 @@
                     <input type="submit" name="submit" value="Continue">
                   </div>
                   <div class="field">
-                    <a class="ssolink" href="#">Don’t have an account? Sign up</a>
+                    <a class="ssolink" href="#">Already have an account? Log in</a>
                   </div>
                 </form>
               </div>

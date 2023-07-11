@@ -31,7 +31,7 @@
         </div>
       </div>
       <div class="col-md-6 login__sub-col">
-        <h1>lord</h1>
+        <!-- <h1>lord</h1> -->
       </div>
     </div>
   </div>
