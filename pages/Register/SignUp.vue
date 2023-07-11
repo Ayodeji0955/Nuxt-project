@@ -7,7 +7,7 @@
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
                 <div class=" text-center py-4">
-                  <img src="assets/images/img_1/favicon.png">
+                  <img src="~@/assets/images/img_1/favicon.png">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
                   Create an account
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div class="col-md-6 login__sub-col">
-        <h1>Continue</h1>
+        <!-- <h1>Continue</h1> -->
       </div>
     </div>
   </div>
