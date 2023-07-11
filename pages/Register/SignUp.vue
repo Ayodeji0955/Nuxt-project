@@ -26,7 +26,7 @@
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
-                    <span v-if="score === 0">Use better password</span>
+                    <!-- <span v-if="score === 0">Use better password</span> -->
                     <Password v-model="password" :show-password="show" :badge="false" :toggle="true" />
                   </div>
                   <!-- <div id="app">
@@ -60,10 +60,7 @@ import Vue from 'vue'
 import Password from 'vue-password-strength-meter'
 
 export default Vue.extend({
-  // name: 'IndexPage',
-  // data: () => ({
-  //   passwordValue: null
-  // })
+
   // name: "IndexPage",
   components: {
     Password
@@ -75,12 +72,12 @@ export default Vue.extend({
   methods: {
     toggle () {
       this.show = !this.show
-    },
-    onScore ({ score, strength }) {
-      console.log(score) // from 0 to 4
-      console.log(strength) // one of : 'risky', 'guessable', 'weak', 'safe' , 'secure' 
-      this.score = score
     }
+    // onScore ({ score, strength }) {
+    //   console.log(score) // from 0 to 4
+    //   console.log(strength) // one of : 'risky', 'guessable', 'weak', 'safe' , 'secure'
+    //   this.score = score
+    // }
   }
 
 })
