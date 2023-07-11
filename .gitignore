@@ -89,5 +89,3 @@ sw.*
 # Vim swap files
 *.swp
 
-# .Nuxt dist
-node_modules .nuxt dist
