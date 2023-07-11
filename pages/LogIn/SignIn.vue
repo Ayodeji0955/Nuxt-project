@@ -22,6 +22,7 @@
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
+                    <!-- <password v-model="password" :show-password="show" :badge="false" :toggle="true" /> -->
                     <input type="password" name="password">
                   </div>
                   <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
@@ -49,17 +50,19 @@
         </div>
       </div>
       <div class="col-md-6 login__sub-col">
-        <h1>lord</h1>
+        <!-- <img src="~@/assets/images/img_1/wrk.png"> -->
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
+// import Password from 'vue-password-strength-meter'
 
 export default Vue.extend({
   name: 'IndexPage'
+
 })
 </script>
 
@@ -74,10 +77,12 @@ export default Vue.extend({
     height: 100vh;
   }
 
-  // &__main-col {
-  //   padding-top: 4rem;
-  // }
 }
+
+// img{
+//   height: 100vh;
+//   position: cover;
+// }
 
 * {
   padding: 0;
