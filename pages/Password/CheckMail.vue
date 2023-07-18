@@ -6,32 +6,20 @@
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
+                <div class=" text-center py-5">
+                  <img src="~@/assets/images/img_1/favicon.png">
+                </div>
+                <h1 class="padding-bottom--12 text-center">
+                  Check mail
+                </h1>
+                <span class="padding-bottom--15 text-center">Password reset link has been sent to your email address.</span>
                 <div class=" text-center py-4">
                   <img src="assets/images/img_1/frame.svg">
                 </div>
-                <h1 class="padding-bottom--12 text-center">
-                  Welcome Back!
-                </h1>
-                <span class="padding-bottom--15 text-center">No worries, we'll send reset instructions to you.</span>
                 <form id="stripe-login">
-                  <div class="field padding-bottom--24">
-                    <label for="email">Enter email address</label>
-                    <input type="email" name="email">
-                  </div>
-                  <div class="field padding-bottom--24">
+                  <a class="ssolink" href="#">Didn't receive the mail? </a>
+                  <div class="field padding-bottom--24 py-3 px-4">
                     <input type="submit" name="submit" value="Sign in">
-                  </div>
-                  <div class="field">
-                    <div class="row justify-content-center g-0">
-                      <div class="col-md-6">
-                        <a class="ssolink" href="#">Don’t have an account? </a>
-                      </div>
-                      <div class="col-md-6">
-                        <nuxt-Link to="/Register/SignUp">
-                          Signup
-                        </nuxt-link>
-                      </div>
-                    </div>
                   </div>
                 </form>
               </div>
@@ -40,7 +28,7 @@
         </div>
       </div>
       <div class="col-md-6 login__sub-col">
-        <h1>reset</h1>
+        <!-- <h1>reset</h1> -->
       </div>
     </div>
   </div>
@@ -271,7 +259,9 @@ input[type="submit"] {
 a.ssolink {
     display: block;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
+    color: #697386;
+    padding-top: 1.5rem;
 }
 .footer-link span {
     font-size: 14px;

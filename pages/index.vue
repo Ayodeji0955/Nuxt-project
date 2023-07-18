@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="">
     <authLogInSignIn />
     <authRegisterSignUp />
@@ -11,4 +11,4 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'IndexPage'
 })
-</script>
+</script> -->

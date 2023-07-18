@@ -7,22 +7,18 @@
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
                 <div class=" text-center py-4">
-                  <img src="assets/images/img_1/frame.svg">
+                  <img src="~@/assets/images/img_1/favicon.png">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
-                  Confirm Email
+                  Mail verification invalid
                 </h1>
-                <span class="padding-bottom--15 text-center">Information link has been sent to your email address </span>
-                <span class="padding-bottom--15 text-center"> email address </span>
                 <form id="stripe-login">
                   <div class=" text-center py-5">
                     <img src="assets/images/img_1/frame.svg">
                   </div>
-                  <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
-                    <a class="ssolink" href="#">Forgot password?</a>
-                  </div>
+                  <span class="padding-bottom--15 text-center">We are unable to find a user associated with this token. It is possible that the token has expired.</span>
                   <div class="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Sign in">
+                    <input type="submit" name="submit" value="Click to resend">
                   </div>
                 </form>
               </div>
@@ -159,11 +155,11 @@ text-decoration: unset;
     padding: 1.5rem;
 }
 .padding-bottom--15 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 2rem;
     color: #404040;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     // line-height: 20px;
 }
@@ -257,7 +253,8 @@ label {
 a.ssolink {
     display: block;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
+    color: #697386;
 }
 .footer-link span {
     font-size: 14px;

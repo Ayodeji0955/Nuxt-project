@@ -101,17 +101,17 @@ export default Vue.extend({
 }
 
 * {
-padding: 0;
-margin: 0;
-color: #1a1f36;
-box-sizing: border-box;
-word-wrap: break-word;
-font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
 }
 body {
-min-height: 100%;
-background-color: #ffffff;
-margin: 0;
+  min-height: 100%;
+  background-color: #ffffff;
+  margin: 0;
 }
 h1 {
   letter-spacing: -1px;

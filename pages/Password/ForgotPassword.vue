@@ -6,32 +6,25 @@
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
-                <div class=" text-center py-4">
-                  <img src="assets/images/img_1/frame.svg">
+                <div class=" text-center py-5">
+                  <img src="~@/assets/images/img_1/favicon.png">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
-                  Welcome Back!
+                  Forgot password?
                 </h1>
                 <span class="padding-bottom--15 text-center">No worries, we'll send reset instructions to you.</span>
                 <form id="stripe-login">
-                  <div class="field padding-bottom--24">
+                  <div class="field padding-bottom--24 py-4">
                     <label for="email">Enter email address</label>
                     <input type="email" name="email">
                   </div>
                   <div class="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Sign in">
+                    <input type="submit" name="submit" value="Next">
                   </div>
-                  <div class="field">
-                    <div class="row justify-content-center g-0">
-                      <div class="col-md-6">
-                        <a class="ssolink" href="#">Don’t have an account? </a>
-                      </div>
-                      <div class="col-md-6">
-                        <nuxt-Link to="/Register/SignUp">
-                          Signup
-                        </nuxt-link>
-                      </div>
-                    </div>
+                  <div class="text-center link">
+                    <nuxt-Link to="/Register/SignUp">
+                      Back to login
+                    </nuxt-link>
                   </div>
                 </form>
               </div>
@@ -268,9 +261,8 @@ input[type="submit"] {
     align-items: center;
     margin: 0;
 }
-a.ssolink {
-    display: block;
-    text-align: center;
+.link a{
+    color: #697386;
     font-weight: 600;
 }
 .footer-link span {

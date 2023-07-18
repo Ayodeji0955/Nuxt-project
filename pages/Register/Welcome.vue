@@ -1,6 +1,6 @@
 <template>
   <div class="welcome">
-    <div class="container welcome__container text-center">
+    <div class="welcome__container text-center">
       <div class="">
         <img src="~@/assets/images/img_1/favicon.png">
         <h1>Welcome to Venture Nation</h1>
@@ -29,17 +29,17 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-// * {
-//   padding: 0;
-//   margin: 0;
-//   color: #1a1f36;
-//   box-sizing: border-box;
-//   word-wrap: break-word;
-//   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
-// }
+* {
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+}
 body {
-    min-height: 100%;
-    background-color: #ffffff;
-    margin: 0;
+  min-height: 100%;
+  background-color: #ffffff;
+  margin: 0;
 }
 </style>

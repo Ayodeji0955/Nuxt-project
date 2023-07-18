@@ -6,8 +6,8 @@
           <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
-                <div class=" text-center py-4">
-                  <img src="assets/images/img_1/frame.svg">
+                <div class=" text-center py-5">
+                  <img src="~@/assets/images/img_1/favicon.png">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
                   Confirm Email
@@ -18,20 +18,11 @@
                   <div class=" text-center py-4">
                     <img src="assets/images/img_1/frame.svg">
                   </div>
-                  <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
-                    <a class="ssolink" href="#">Forgot password?</a>
+                  <div class="field field-checkbox padding-bottom--24">
+                    <a class="ssolink" href="#">Didn't receive the email</a>
                   </div>
                   <div class="field padding-bottom--24">
                     <input type="submit" name="submit" value="Click to resend">
-                  </div>
-                  <div class="field">
-                    <div class="row justify-content-center g-0">
-                      <div class="col-md-6">
-                        <nuxt-Link to="/Register/SignUp">
-                          Signup
-                        </nuxt-link>
-                      </div>
-                    </div>
                   </div>
                 </form>
               </div>
@@ -156,7 +147,7 @@ export default Vue.extend({
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    // line-height: 20px;
+    line-height: 20px;
 }
   .padding-bottom--12 {
     padding-bottom: 0.75rem;
@@ -249,7 +240,8 @@ export default Vue.extend({
   a.ssolink {
       display: block;
       text-align: center;
-      font-weight: 600;
+      font-weight: 400;
+      color: grey;
   }
   .footer-link span {
       font-size: 14px;
