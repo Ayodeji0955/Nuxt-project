@@ -48,9 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 login__sub-col">
-        <!-- <h1>Continue</h1> -->
-      </div>
+      <div class="col-md-6 login__sub-col" />
     </div>
   </div>
 </template>

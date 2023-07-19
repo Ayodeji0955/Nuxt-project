@@ -14,7 +14,7 @@
                 </h1>
                 <form id="stripe-login">
                   <div class="py-5 text-center">
-                    <i class="fa-regular fa-envelope fa-2xl"></i>
+                    <i class="fa-regular fa-envelope fa-2xl" />
                   </div>
                   <span class="padding-bottom--15 text-center">We are unable to find a user associated with this token. It is possible that the token has expired.</span>
                   <div class="field padding-bottom--24">
@@ -26,9 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 login__sub-col">
-        <!-- <h1>lord</h1> -->
-      </div>
+      <div class="col-md-6 login__sub-col" />
     </div>
   </div>
 </template>
