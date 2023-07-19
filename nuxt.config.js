@@ -46,7 +46,21 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build'
+    '@nuxt/typescript-build',
+    ['@nuxtjs/fontawesome', {
+      component: 'fa',
+      suffix: true,
+      proIcons: { // if you have bought the Pro packages
+        // list the icons you want to add, not listed icons will be tree-shaked
+        solid: [
+          'faHome',
+          'faHeart'
+        ],
+        // include all icons. But dont do this.
+        regular: true
+      }
+    }
+    ]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
