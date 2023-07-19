@@ -14,7 +14,7 @@
                 </h1>
                 <form id="stripe-login">
                   <div class="py-5 text-center">
-                    <i class="fa-regular fa-envelope fa-2xl" />
+                    <i class="fa-solid fa-circle-exclamation fa-2xl" />
                   </div>
                   <span class="padding-bottom--15 text-center">We are unable to find a user associated with this token. It is possible that the token has expired.</span>
                   <div class="field padding-bottom--24">
@@ -65,7 +65,7 @@ export default Vue.extend({
 // }
 
 i {
-    color:#5A27D5;
+    color: lightcoral;
 }
 
 * {

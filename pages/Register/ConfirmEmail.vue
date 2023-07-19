@@ -16,7 +16,7 @@
                 <span class="padding-bottom--15 text-center"> email address </span>
                 <form id="stripe-login">
                   <div class=" text-center py-4">
-                    <img src="assets/images/img_1/frame.svg">
+                    <i class="fa-regular fa-envelope fa-2xl" />
                   </div>
                   <div class="field field-checkbox padding-bottom--24">
                     <a class="ssolink" href="#">Didn't receive the email</a>
@@ -58,6 +58,9 @@ export default Vue.extend({
     //   padding-top: 4rem;
     // }
   }
+i {
+    color:#5A27D5;
+}
 * {
     padding: 0;
     margin: 0;
