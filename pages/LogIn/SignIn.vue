@@ -23,8 +23,17 @@
                       <label for="password">Password</label>
                     </div>
                     <!-- <password v-model="password" :show-password="show" :badge="false" :toggle="true" /> -->
-                    <!-- <input type="password" name="password"> -->
-                    <Password v-model="password" type="password" name="password" :show-password="show" :toggle="true" />
+                    <div class="">
+                      <input v-if="showPassword" v-model="password" type="password" name="password">
+
+                      <!-- @click="toggleShow"><span class="icon is-small is-right">
+                      <i class="fas" :class="{ 'fa-eye-slash': showPassword, 'fa-eye': !showPassword }"></i>
+                    </span>
+                      <i -->
+                      <span class="icon is-small is-right">
+                        <i class="showPassword ? 'fa-regular fa-eye' : 'fa-regular fa-eye-slash'" @click="toggleShow" />
+                      </span>
+                    </div>
                   </div>
                   <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                     <a class="ssolink" href="#">Forgot password?</a>
@@ -50,22 +59,14 @@
 
 <script>
 import Vue from 'vue'
-import Password from 'vue-password-strength-meter'
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: {
-    Password
-  },
+
   data: () => ({
-    password: null,
-    show: false
-  }),
-  methods: {
-    toggle () {
-      this.show = !this.show
-    }
-  }
+    showPassword: false,
+    password: null
+  })
 
 })
 </script>
