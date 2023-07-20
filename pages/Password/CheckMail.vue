@@ -13,8 +13,8 @@
                   Check mail
                 </h1>
                 <span class="padding-bottom--15 text-center">Password reset link has been sent to your email address.</span>
-                <div class=" text-center py-4">
-                  <img src="assets/images/img_1/frame.svg">
+                <div class=" text-center py-4 mail">
+                  <img src="~@/assets/images/img_1/mail.png">
                 </div>
                 <form id="stripe-login">
                   <a class="ssolink" href="#">Didn't receive the mail? </a>
@@ -47,15 +47,15 @@ export default Vue.extend({
     background-image: url('~@/assets/images/img_1/wrk.png');
     background-position:center;
     background-size:cover;
-    // padding-top: 7rem;
+
     height: 100vh;
   }
-
-  // &__main-col {
-  //   padding-top: 4rem;
-  // }
 }
-
+.mail img {
+  width: 65px;
+  height: 65px;
+  text-align: center;
+}
 * {
   padding: 0;
   margin: 0;
@@ -121,24 +121,6 @@ a {
     margin: 0 -2%;
     transform: rotate(-12deg) skew(-12deg);
 }
-// .box-divider--light-all-2 {
-//     box-shadow: inset 0 0 0 2px #e3e8ee;
-// }
-// .box-background--blue {
-//     background-color: #5469d4;
-// }
-// .box-background--white {
-//   background-color: #ffffff;
-// }
-// .box-background--blue800 {
-//     background-color: #212d63;
-// }
-// .box-background--gray100 {
-//     background-color: #e3e8ee;
-// }
-// .box-background--cyan200 {
-//     background-color: #7fd3ed;
-// }
 .padding-top--64 {
   padding-top: 4rem;
 }
@@ -173,18 +155,12 @@ a {
   color: #404040;
 }
 
-// .flex-justifyContent--center {
-//   -ms-flex-pack: center;
-//   justify-content: center;
-// }
-
 .formbg {
     margin: 0px auto;
     width: 100%;
     max-width: 448px;
     background: white;
     border-radius: 4px;
-    // box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
 span {
     display: block;
@@ -231,16 +207,9 @@ label {
 
 input[type="submit"] {
   background: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
-    // box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    //             rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-    //             rgb(84, 105, 212) 0px 0px 0px 1px,
-    //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    //             rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 .field-checkbox input {
     width: 20px;

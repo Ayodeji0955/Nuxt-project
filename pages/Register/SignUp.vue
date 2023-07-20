@@ -26,16 +26,8 @@
                     <div class="grid--50-50">
                       <label for="password">Password</label>
                     </div>
-                    <!-- <span v-if="score === 0">Use better password</span> -->
                     <Password v-model="password" :show-password="show" :badge="false" :toggle="true" />
                   </div>
-                  <!-- <div id="app">
-                    <button @click.prevent="toggle()">
-                      Show / Hide Password
-                    </button>
-                    <hr>
-                    <Password v-model="password" :show-password="show" :badge="false" :toggle="true" />
-                  </div> -->
                   <div class="field padding-bottom--24">
                     <input type="submit" name="submit" value="Continue">
                   </div>
@@ -71,11 +63,6 @@ export default Vue.extend({
     toggle () {
       this.show = !this.show
     }
-    // onScore ({ score, strength }) {
-    //   console.log(score) // from 0 to 4
-    //   console.log(strength) // one of : 'risky', 'guessable', 'weak', 'safe' , 'secure'
-    //   this.score = score
-    // }
   }
 
 })
@@ -89,13 +76,9 @@ export default Vue.extend({
     background-image: url('~@/assets/images/img_1/wrk.png');
     background-position:center;
     background-size:cover;
-    // padding-top: 7rem;
     height: 100vh;
 }
 
-// &__main-col {
-//   padding-top: 4rem;
-// }
 }
 
 * {
@@ -245,13 +228,6 @@ label {
 }
 input[type="submit"] {
     background: linear-gradient(90.73deg, #5A27D5 0%, #5F27D3 32.36%, #AE2EC4 100%);
-      // box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      //             rgba(0, 0, 0, 0.12) 0px 1px 1px 0px,
-      //             rgb(84, 105, 212) 0px 0px 0px 1px,
-      //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      //             rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-      //             rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
     color: #fff;
     font-weight: 600;
     cursor: pointer;

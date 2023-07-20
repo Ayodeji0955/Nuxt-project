@@ -13,8 +13,8 @@
                   Mail verification invalid
                 </h1>
                 <form id="stripe-login">
-                  <div class="py-5 text-center">
-                    <i class="fa-solid fa-circle-exclamation fa-2xl" />
+                  <div class="py-5 text-center v-error">
+                    <img src="~@/assets/images/img_1/v-error.png">
                   </div>
                   <span class="padding-bottom--15 text-center">We are unable to find a user associated with this token. It is possible that the token has expired.</span>
                   <div class="field padding-bottom--24">
@@ -47,27 +47,14 @@ export default Vue.extend({
     background-image: url('~@/assets/images/img_1/wrk.png');
     background-position:center;
     background-size:cover;
-    // padding-top: 7rem;
     height: 100vh;
 }
-     // &__main-col {
-        //   padding-top: 4rem;
-        // }
 }
-
-// .circle {
-//     background: lightblue;
-//     border-radius: 50%;
-//     width: 100px;
-//     height: 100px;
-//     text-align: center;
-//     padding: 0rem;
-// }
-
-i {
-    color: lightcoral;
+.v-error img {
+    width: 65px;
+    height: 65px;
+    text-align: center;
 }
-
 * {
     padding: 0;
     margin: 0;
