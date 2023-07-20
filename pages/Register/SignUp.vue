@@ -51,7 +51,7 @@ import Password from 'vue-password-strength-meter'
 
 export default Vue.extend({
 
-  // name: "IndexPage",
+  name: 'IndexPage',
   components: {
     Password
   },
