@@ -7,7 +7,7 @@
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
                 <div class=" text-center py-4">
-                  <img src="assets/images/img_1/frame.svg">
+                  <img src="~@/assets/images/img_1/favicon.png">
                 </div>
                 <h1 class="padding-bottom--12 text-center">
                   Confirm Email
