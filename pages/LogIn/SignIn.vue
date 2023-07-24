@@ -42,7 +42,12 @@
                     <input type="submit" name="submit" value="Sign in">
                   </div>
                   <div class="field">
-                    <a class="ssolink" href="#">Don’t have an account? Sign up</a>
+                    <a class="ssolink" href="#">
+                      Don’t have an account?
+                      <nuxt-link to="/Register/SignUp">
+                        Sign up
+                      </nuxt-link>
+                    </a>
                   </div>
                 </form>
               </div>

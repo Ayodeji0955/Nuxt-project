@@ -32,7 +32,12 @@
                     <input type="submit" name="submit" value="Continue">
                   </div>
                   <div class="field">
-                    <a class="ssolink" href="#">Already have an account? Log in</a>
+                    <a class="ssolink" href="#">
+                      Already have an account?
+                      <nuxt-link to="/Login/SignIn">
+                        Log in
+                      </nuxt-link>
+                    </a>
                   </div>
                 </form>
               </div>
@@ -59,6 +64,17 @@ export default Vue.extend({
     password: null,
     show: false
   }),
+  mounted () {
+    // eslint-disable-next-line nuxt/no-env-in-hooks
+    if (process.browser) {
+      // Code inside this block will only run in the client-side context
+      // where the 'document' object is available
+      const element = document.getElementById('myElement')
+      // eslint-disable-next-line no-unused-expressions
+      element
+      // ...
+    }
+  },
   methods: {
     toggle () {
       this.show = !this.show
