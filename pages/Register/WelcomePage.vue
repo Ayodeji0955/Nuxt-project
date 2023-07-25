@@ -1,16 +1,14 @@
 <template>
   <div class="welcome">
     <div class="welcome__container text-center">
-      <div class="">
+      <div class="row welcome__row align-items-center">
         <img src="~@/assets/images/img_1/favicon.png">
         <h1>Welcome to Venture Nation</h1>
         <p>We're glad you're here. Choose your path to get started.</p>
-      </div>
-      <div class="row welcome__row align-items-center">
-        <div class="col welcome__col">
+        <div class="col-md-3 welcome__col">
           <h1>tehe</h1>
         </div>
-        <div class="col welcome__col">
+        <div class="col-md-6 welcome__col">
           <h1>tehe</h1>
         </div>
       </div>
