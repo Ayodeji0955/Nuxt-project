@@ -31,7 +31,7 @@
                     </span>
                       <i -->
                       <span class="icon is-small is-right">
-                        <i class="showPassword ? 'fa-regular fa-eye' : 'fa-regular fa-eye-slash'" @click="toggleShow" />
+                        <!-- <i class="showPassword ? 'fa-regular fa-eye' : 'fa-regular fa-eye-slash'" @click="toggleShow" /> -->
                       </span>
                     </div>
                   </div>

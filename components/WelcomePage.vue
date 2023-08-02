@@ -40,4 +40,3 @@ body {
   background-color: #ffffff;
   margin: 0;
 }
-</style>
